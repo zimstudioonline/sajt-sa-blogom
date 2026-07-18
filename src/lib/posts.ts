@@ -18,6 +18,7 @@ export type PostMeta = {
   category: string; // ime kategorije iz frontmatter-a
   categorySlug: string; // izvedeni slug (za /teme/[category])
   excerpt: string;
+  author: string;
   cover?: string;
   draft: boolean;
 };
@@ -42,6 +43,7 @@ function readPostFile(fileName: string): Post {
     category: category?.name ?? categoryName,
     categorySlug: category?.slug ?? "",
     excerpt: String(data.excerpt ?? ""),
+    author: String(data.author ?? "Redakcija Zdrav Ritual"),
     cover: data.cover ? String(data.cover) : undefined,
     draft: Boolean(data.draft ?? false),
     content,

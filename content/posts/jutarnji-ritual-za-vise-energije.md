@@ -3,6 +3,7 @@ title: "Jutarnji ritual za više energije"
 date: "2026-07-10"
 category: "Energija i vitalnost"
 excerpt: "Nekoliko jednostavnih jutarnjih navika koje pomažu da dan započnete odmorno, fokusirano i sa više energije."
+author: "Redakcija Zdrav Ritual"
 draft: false
 ---
 

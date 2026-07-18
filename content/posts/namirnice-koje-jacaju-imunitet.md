@@ -3,6 +3,7 @@ title: "Namirnice koje prirodno jačaju imunitet"
 date: "2026-07-05"
 category: "Imunitet"
 excerpt: "Koje namirnice u svakodnevnoj ishrani podržavaju odbrambeni sistem organizma i kako da ih uklopite u obroke."
+author: "Redakcija Zdrav Ritual"
 draft: false
 ---
 

@@ -3,6 +3,7 @@ title: "Mindfulness za početnike: kako smiriti um"
 date: "2026-06-28"
 category: "Svesni život"
 excerpt: "Jednostavan uvod u praksu svesnosti (mindfulness) — šta je, zašto pomaže i kako da počnete sa samo pet minuta dnevno."
+author: "Redakcija Zdrav Ritual"
 draft: false
 ---
 

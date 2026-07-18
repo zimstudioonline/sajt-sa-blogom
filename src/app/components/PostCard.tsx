@@ -41,9 +41,10 @@ export default function PostCard({ post }: { post: PostMeta }) {
             </p>
           )}
 
-          <span className="mt-auto pt-1 text-sm font-medium text-accent">
-            Pročitaj više →
-          </span>
+          <div className="mt-auto flex items-center justify-between pt-2">
+            <span className="text-xs text-muted">{post.author}</span>
+            <span className="text-sm font-medium text-accent">Pročitaj →</span>
+          </div>
         </div>
       </Link>
     </article>
