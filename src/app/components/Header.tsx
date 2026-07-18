@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 
 const navLinks = [
   { href: "/", label: "Početna" },
@@ -13,9 +14,10 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
         <Link
           href="/"
-          className="text-xl font-semibold tracking-tight text-foreground"
+          aria-label="Zdrav Ritual — početna"
+          className="text-foreground"
         >
-          Zdrav Ritual
+          <Logo width={120} />
         </Link>
         <nav>
           <ul className="flex items-center gap-6 text-sm font-medium text-muted">
