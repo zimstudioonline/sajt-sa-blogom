@@ -1,1 +1,0 @@
-This folder contains the built output assets for the worker "zdravritual-newsletter" generated at 2026-07-18T20:53:16.318Z.
