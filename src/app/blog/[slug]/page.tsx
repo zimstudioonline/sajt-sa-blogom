@@ -7,6 +7,7 @@ import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
 import { getCategoryBySlug } from "@/lib/categories";
 import { formatDate } from "@/lib/format";
+import ShareButtons from "../../components/ShareButtons";
 
 export function generateStaticParams() {
   return getAllPosts().map((post) => ({ slug: post.slug }));
@@ -90,13 +91,18 @@ export default async function PostPage(props: PageProps<"/blog/[slug]">) {
         </ReactMarkdown>
       </div>
 
-      <div className="mt-12 border-t border-border pt-6">
-        <Link
-          href="/blog"
-          className="text-sm font-medium text-accent transition-colors hover:text-accent-hover"
-        >
-          ← Nazad na blog
-        </Link>
+      <div className="mt-12 border-t border-border pt-8">
+        <div className="flex justify-center">
+          <ShareButtons slug={post.slug} title={post.title} />
+        </div>
+        <div className="mt-8 text-center">
+          <Link
+            href="/blog"
+            className="text-sm font-medium text-accent transition-colors hover:text-accent-hover"
+          >
+            ← Nazad na blog
+          </Link>
+        </div>
       </div>
     </article>
   );
