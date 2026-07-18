@@ -3,7 +3,9 @@ import { getAllPosts } from "@/lib/posts";
 import { categories } from "@/lib/categories";
 import { kalkulatori } from "@/lib/calculators";
 
-// Zameni pravim domenom kad sajt bude objavljen.
+// Statički export (GitHub Pages) — sitemap se generiše na build-u u fajl.
+export const dynamic = "force-static";
+
 const BASE_URL = "https://zdravritual.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {

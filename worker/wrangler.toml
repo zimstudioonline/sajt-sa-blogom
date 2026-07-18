@@ -1,0 +1,18 @@
+name = "zdravritual-newsletter"
+main = "src/index.ts"
+compatibility_date = "2026-07-18"
+
+# Nije tajna — dozvoljeni origin i ID audience-a.
+[vars]
+ALLOWED_ORIGIN = "https://zdravritual.com"
+RESEND_AUDIENCE_ID = ""   # popuni ID iz Resend → Audiences
+
+# Tajne se NE stavljaju ovde. Postavi ih komandama:
+#   cd worker
+#   npx wrangler secret put RESEND_API_KEY
+#   npx wrangler secret put TURNSTILE_SECRET   # opciono, za CAPTCHA
+
+# (opciono) Lep custom domen umesto *.workers.dev — traži da je DNS domena na Cloudflare:
+# [[routes]]
+# pattern = "api.zdravritual.com"
+# custom_domain = true
