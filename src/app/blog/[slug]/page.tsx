@@ -67,8 +67,20 @@ export default async function PostPage(props: PageProps<"/blog/[slug]">) {
         </div>
       )}
 
-      <div className="prose prose-neutral max-w-none dark:prose-invert prose-a:text-accent prose-headings:text-foreground prose-blockquote:border-accent">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content}</ReactMarkdown>
+      <div className="prose prose-neutral max-w-none dark:prose-invert prose-a:text-accent prose-headings:text-foreground prose-blockquote:border-accent prose-img:rounded-2xl">
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            img: ({ src, alt }) =>
+              typeof src === "string" ? (
+                // Slike iz Markdown-a — nepoznatih dimenzija, pa običan <img>.
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={src} alt={alt ?? ""} loading="lazy" className="w-full" />
+              ) : null,
+          }}
+        >
+          {post.content}
+        </ReactMarkdown>
       </div>
 
       <div className="mt-12 border-t border-border pt-6">
