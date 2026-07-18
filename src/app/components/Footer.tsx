@@ -29,13 +29,13 @@ export default function Footer() {
   const istaknuteKategorije = categories.slice(0, 6);
 
   return (
-    <footer className="mt-16 border-t border-border bg-surface">
+    <footer className="mt-16 bg-black text-zinc-400">
       <div className="mx-auto max-w-6xl px-6 py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brend */}
           <div>
-            <p className="text-lg font-semibold text-foreground">Zdrav Ritual</p>
-            <p className="mt-3 text-sm leading-6 text-muted">
+            <p className="text-lg font-semibold text-white">Zdrav Ritual</p>
+            <p className="mt-3 text-sm leading-6 text-zinc-400">
               Vaš vodič ka zdravijem i kvalitetnijem životu — naučno potkrepljeni saveti o
               zdravlju, ishrani i zdravim navikama.
             </p>
@@ -43,8 +43,8 @@ export default function Footer() {
 
           {/* Kategorije */}
           <div>
-            <p className="mb-3 text-sm font-semibold text-foreground">Kategorije</p>
-            <ul className="flex flex-col gap-2 text-sm text-muted">
+            <p className="mb-3 text-sm font-semibold text-white">Kategorije</p>
+            <ul className="flex flex-col gap-2 text-sm text-zinc-400">
               {istaknuteKategorije.map((c) => (
                 <li key={c.slug}>
                   <Link
@@ -65,8 +65,8 @@ export default function Footer() {
 
           {/* Navigacija */}
           <div>
-            <p className="mb-3 text-sm font-semibold text-foreground">Navigacija</p>
-            <ul className="flex flex-col gap-2 text-sm text-muted">
+            <p className="mb-3 text-sm font-semibold text-white">Navigacija</p>
+            <ul className="flex flex-col gap-2 text-sm text-zinc-400">
               {navigacija.map((n) => (
                 <li key={n.href}>
                   <Link href={n.href} className="transition-colors hover:text-accent">
@@ -79,8 +79,8 @@ export default function Footer() {
 
           {/* Pravno + mreže */}
           <div>
-            <p className="mb-3 text-sm font-semibold text-foreground">Pravno</p>
-            <ul className="flex flex-col gap-2 text-sm text-muted">
+            <p className="mb-3 text-sm font-semibold text-white">Pravno</p>
+            <ul className="flex flex-col gap-2 text-sm text-zinc-400">
               {pravno.map((p) => (
                 <li key={p.href}>
                   <Link href={p.href} className="transition-colors hover:text-accent">
@@ -89,10 +89,10 @@ export default function Footer() {
                 </li>
               ))}
             </ul>
-            <p className="mb-3 mt-6 text-sm font-semibold text-foreground">
+            <p className="mb-3 mt-6 text-sm font-semibold text-white">
               Društvene mreže
             </p>
-            <ul className="flex gap-4 text-sm text-muted">
+            <ul className="flex gap-4 text-sm text-zinc-400">
               {mreze.map((m) => (
                 <li key={m.label}>
                   <a
@@ -109,7 +109,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-border pt-6 text-sm text-muted">
+        <div className="mt-12 border-t border-white/10 pt-6 text-sm text-zinc-500">
           © {year} Zdrav Ritual. Sva prava zadržana.
         </div>
       </div>
