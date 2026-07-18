@@ -4,6 +4,7 @@ import { categories } from "@/lib/categories";
 import { kalkulatori } from "@/lib/calculators";
 import PostCard from "./components/PostCard";
 import SavetDana from "./components/SavetDana";
+import NewsletterSection from "./components/NewsletterSection";
 
 const razloziPoverenja = [
   "Naučno proverene informacije",
@@ -230,6 +231,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* SEKCIJA 13 — Newsletter (video pozadina) */}
+      <NewsletterSection />
     </div>
   );
 }
