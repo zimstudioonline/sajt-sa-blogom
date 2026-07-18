@@ -17,11 +17,12 @@ const pravno = [
   { href: "/sitemap.xml", label: "Mapa sajta" },
 ];
 
-// Zameni "#" pravim linkovima kad budu spremni.
+// Dodaj Instagram/YouTube kad linkovi budu spremni.
 const mreze = [
-  { href: "#", label: "Facebook" },
-  { href: "#", label: "Instagram" },
-  { href: "#", label: "YouTube" },
+  {
+    href: "https://www.facebook.com/profile.php?id=61590410776967",
+    label: "Facebook",
+  },
 ];
 
 export default function Footer() {
