@@ -1,0 +1,43 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root {
+  /* Neutralne pozadine + topli akcenat (wellness) */
+  --background: #faf8f5;
+  --foreground: #262019;
+  --surface: #ffffff;
+  --border: #e9e2d8;
+  --muted: #6f6656;
+  --accent: #c2703d; /* topla terakota */
+  --accent-hover: #a95c2d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #14110d;
+    --foreground: #ece6dd;
+    --surface: #1e1a15;
+    --border: #322c24;
+    --muted: #a89f8f;
+    --accent: #e08a52;
+    --accent-hover: #eb9d68;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
