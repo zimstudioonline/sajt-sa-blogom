@@ -11,15 +11,8 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-surface/80 backdrop-blur">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-6">
-        <Link
-          href="/"
-          aria-label="Zdrav Ritual — početna"
-          className="text-foreground"
-        >
-          <Logo width={120} />
-        </Link>
-        <nav>
+      <div className="relative mx-auto flex h-16 max-w-5xl items-center justify-start px-6">
+        <nav className="absolute left-1/2 -translate-x-1/2">
           <ul className="flex items-center gap-6 text-sm font-medium text-muted">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -33,6 +26,13 @@ export default function Header() {
             ))}
           </ul>
         </nav>
+        <Link
+          href="/"
+          aria-label="Zdrav Ritual — početna"
+          className="text-foreground"
+        >
+          <Logo width={120} />
+        </Link>
       </div>
     </header>
   );
