@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { getAllPosts, getPostBySlug } from "@/lib/posts";
+import { getCategoryBySlug } from "@/lib/categories";
 import { formatDate } from "@/lib/format";
 
 export function generateStaticParams() {
@@ -32,6 +33,8 @@ export default async function PostPage(props: PageProps<"/blog/[slug]">) {
 
   if (!post || post.draft) notFound();
 
+  const kategorijaBoja = getCategoryBySlug(post.categorySlug)?.color ?? "#c2703d";
+
   return (
     <article className="mx-auto max-w-3xl px-6 py-16">
       <div className="mb-8">
@@ -39,7 +42,11 @@ export default async function PostPage(props: PageProps<"/blog/[slug]">) {
           {post.categorySlug && (
             <Link
               href={`/teme/${post.categorySlug}`}
-              className="rounded-full bg-accent/10 px-3 py-1 font-medium text-accent transition-colors hover:bg-accent/20"
+              className="rounded-full px-3 py-1 font-medium transition-opacity hover:opacity-80"
+              style={{
+                color: kategorijaBoja,
+                backgroundColor: `${kategorijaBoja}1a`,
+              }}
             >
               {post.category}
             </Link>

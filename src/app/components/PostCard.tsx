@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { PostMeta } from "@/lib/posts";
+import { getCategoryBySlug } from "@/lib/categories";
 import { formatDate } from "@/lib/format";
 
 export default function PostCard({ post }: { post: PostMeta }) {
+  const boja = getCategoryBySlug(post.categorySlug)?.color ?? "#c2703d";
+
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-shadow hover:shadow-lg">
       <Link href={`/blog/${post.slug}`} className="flex flex-1 flex-col">
@@ -24,7 +27,10 @@ export default function PostCard({ post }: { post: PostMeta }) {
         <div className="flex flex-1 flex-col gap-3 p-5">
           <div className="flex items-center gap-2 text-xs font-medium text-muted">
             {post.category && (
-              <span className="rounded-full bg-accent/10 px-2.5 py-1 text-accent">
+              <span
+                className="rounded-full px-2.5 py-1"
+                style={{ color: boja, backgroundColor: `${boja}1a` }}
+              >
                 {post.category}
               </span>
             )}
