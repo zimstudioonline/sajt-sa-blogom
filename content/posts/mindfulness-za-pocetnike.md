@@ -4,12 +4,15 @@ date: "2026-06-28"
 category: "Svesni život"
 excerpt: "Jednostavan uvod u praksu svesnosti (mindfulness) — šta je, zašto pomaže i kako da počnete sa samo pet minuta dnevno."
 author: "Redakcija Zdrav Ritual"
+cover: "/images/posts/mindfulness-za-pocetnike.webp"
 draft: false
 ---
 
 Mindfulness za početnike predstavlja jednostavan i efikasan način da naučite kako da smirite um, smanjite stres i usmerite pažnju na sadašnji trenutak. Dobra vest je da vam za početak nisu potrebni posebna oprema, veliko iskustvo niti mnogo slobodnog vremena. Već nekoliko minuta dnevno može biti dovoljno da napravite prve korake ka većoj unutrašnjoj ravnoteži i miru.
 
 Savremeni način života često podrazumeva ubrzan tempo, veliki broj obaveza i konstantnu izloženost informacijama. Mnogi ljudi imaju osećaj da im misli neprestano lutaju između prošlosti i budućnosti, zbog čega se javlja napetost, umor i osećaj preopterećenosti. Upravo zato mindfulness postaje sve popularnija praksa među ljudima koji žele da poboljšaju kvalitet svakodnevnog života.
+
+![Žena sedi u meditativnom položaju na prostirci pored prozora, zatvorenih očiju, uz šoljicu čaja i sveću — mindfulness za početnike, kako smiriti um u samo 5 minuta dnevno](/images/posts/mindfulness-za-pocetnike.webp)
 
 ## Šta je mindfulness i zašto je sve popularniji
 
