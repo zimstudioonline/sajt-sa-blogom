@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { categories } from "@/lib/categories";
+import CookieSettingsLink from "./CookieSettingsLink";
 
 const navigacija = [
   { href: "/", label: "Početna" },
@@ -89,6 +90,12 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              {/* Pristanak mora da se povlači jednako lako kao što se daje. */}
+              <li>
+                <CookieSettingsLink className="text-left transition-colors hover:text-accent">
+                  Podešavanja kolačića
+                </CookieSettingsLink>
+              </li>
             </ul>
             <p className="mb-3 mt-6 text-sm font-semibold text-white">
               Društvene mreže

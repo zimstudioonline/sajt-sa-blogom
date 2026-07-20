@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import CookieSettingsLink from "@/app/components/CookieSettingsLink";
 
 export const metadata: Metadata = {
   title: "Cookie politika",
@@ -9,12 +11,171 @@ export default function Page() {
   return (
     <div className="mx-auto max-w-3xl px-6 py-16">
       <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-        Cookie politika
+        Politika kolačića
       </h1>
-      <p className="mt-6 text-muted">
-        Ovaj dokument je u pripremi. Ovde ćemo objasniti koje kolačiće (cookies) sajt
-        koristi, u koje svrhe i kako možete upravljati njima.
-      </p>
+      <p className="mt-3 text-sm text-muted">Poslednje ažuriranje: 20. jul 2026.</p>
+
+      <div className="mt-10 space-y-10 text-muted leading-relaxed">
+        <section>
+          <p>
+            Ova Politika kolačića objašnjava šta su kolačići (cookies), kako ih
+            koristimo na sajtu ZdravRitual.com i koje mogućnosti imate u vezi sa
+            njihovim korišćenjem.
+          </p>
+          <p className="mt-3">
+            Kolačiće koji nisu neophodni postavljamo{" "}
+            <strong className="font-medium text-foreground">
+              tek nakon što date izričitu saglasnost
+            </strong>{" "}
+            putem banera koji se pojavljuje pri prvoj poseti. Saglasnost možete
+            povući ili izmeniti u bilo kom trenutku — <CookieSettingsLink />.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">Šta su kolačići?</h2>
+          <p className="mt-3">
+            Kolačići su male tekstualne datoteke koje se čuvaju na vašem računaru,
+            telefonu ili drugom uređaju kada posetite internet stranicu. Njihova svrha
+            je da omoguće pravilno funkcionisanje sajta, poboljšaju korisničko
+            iskustvo, zapamte određena podešavanja i pomognu u analizi posećenosti.
+            Kolačići ne sadrže viruse niti mogu oštetiti vaš uređaj.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">
+            Šta trenutno koristimo
+          </h2>
+          <p className="mt-3">
+            Zdrav Ritual je statički sajt bez korisničkih naloga i bez sistema za
+            komentare. Trenutno ne koristimo{" "}
+            <strong className="font-medium text-foreground">
+              nijedan kolačić za praćenje
+            </strong>{" "}
+            — ni analitičke, ni marketinške. Jedini podatak koji ostavljamo u vašem
+            pregledaču jeste zapis o vašem izboru u vezi sa kolačićima, kako vas ne
+            bismo pitali na svakoj stranici.
+          </p>
+          <p className="mt-3">
+            Ovaj odeljak ažuriraćemo čim to prestane da važi, uz datum izmene naveden
+            na vrhu stranice.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">
+            Vrste kolačića i kada ih koristimo
+          </h2>
+
+          <h3 className="mt-6 font-medium text-foreground">1. Neophodni kolačići</h3>
+          <p className="mt-2">
+            Neophodni su za rad sajta i ne mogu se isključiti. Kod nas se svode na
+            pamćenje vašeg izbora u vezi sa kolačićima. Za njih saglasnost nije
+            potrebna, jer bez njih sajt ne može da poštuje vašu odluku.
+          </p>
+
+          <h3 className="mt-6 font-medium text-foreground">2. Analitički kolačići</h3>
+          <p className="mt-2">
+            Ukoliko ih uvedemo, služili bi da razumemo kako posetioci koriste sajt —
+            broj poseta, najčitaniji članci, vreme provedeno na stranici, vrste uređaja
+            i način dolaska na sajt. Podaci se koriste isključivo za unapređenje
+            sadržaja. Postavljaju se samo uz vašu saglasnost.
+          </p>
+
+          <h3 className="mt-6 font-medium text-foreground">3. Marketinški kolačići</h3>
+          <p className="mt-2">
+            Ukoliko uvedemo oglašavanje, kolačići naših marketinških partnera mogli bi
+            da služe za prikaz relevantnih oglasa, merenje uspešnosti kampanja,
+            ograničavanje broja prikaza istog oglasa i remarketing. Postavljaju se samo
+            uz vašu saglasnost.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">Kolačići trećih strana</h2>
+          <p className="mt-3">
+            Trenutno na sajtu nema ugrađenih servisa trećih strana koji postavljaju
+            kolačiće. Ukoliko ih budemo uveli — na primer Google Analytics, Google Ads,
+            ugrađeni YouTube video ili Meta (Facebook) Pixel — biće aktivirani tek
+            nakon vaše saglasnosti, a ova stranica će biti dopunjena spiskom konkretnih
+            servisa. Svaki od tih servisa ima sopstvenu politiku privatnosti.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">
+            Kako možete upravljati kolačićima?
+          </h2>
+          <p className="mt-3">
+            Svoj izbor na ovom sajtu možete promeniti u bilo kom trenutku —{" "}
+            <CookieSettingsLink />.
+          </p>
+          <p className="mt-3">
+            Nezavisno od toga, većina internet pregledača omogućava prihvatanje svih
+            kolačića, odbijanje svih kolačića, brisanje postojećih i blokiranje
+            kolačića pojedinih sajtova. Podešavanja možete promeniti u svom pregledaču
+            u bilo kom trenutku. Isključivanje određenih kolačića može uticati na
+            pravilno funkcionisanje pojedinih delova sajta.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">
+            Koliko dugo čuvamo kolačiće?
+          </h2>
+          <p className="mt-3">
+            Zapis o vašem izboru u vezi sa kolačićima ostaje u pregledaču dok ga sami
+            ne obrišete ili ne promenite izbor. Ukoliko ubuduće uvedemo analitičke ili
+            marketinške kolačiće, njihova trajanja biće navedena ovde — deo njih su
+            sesijski (brišu se po zatvaranju pregledača), a deo trajni (ostaju
+            određeni vremenski period).
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">Zaštita podataka</h2>
+          <p className="mt-3">
+            Podaci prikupljeni putem kolačića obrađuju se u skladu sa važećim propisima
+            o zaštiti podataka o ličnosti. Ne prodajemo vaše lične podatke trećim
+            licima. Više o obradi podataka pročitajte u{" "}
+            <Link
+              href="/politika-privatnosti"
+              className="text-foreground underline underline-offset-4"
+            >
+              Politici privatnosti
+            </Link>
+            .
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">
+            Izmene Politike kolačića
+          </h2>
+          <p className="mt-3">
+            Zadržavamo pravo da ovu Politiku kolačića povremeno ažuriramo radi
+            usklađivanja sa zakonskim propisima ili promenama u radu sajta. Sve izmene
+            biće objavljene na ovoj stranici zajedno sa datumom poslednjeg ažuriranja.
+          </p>
+        </section>
+
+        <section>
+          <h2 className="text-xl font-semibold text-foreground">Kontakt</h2>
+          <p className="mt-3">
+            Ukoliko imate pitanja u vezi sa korišćenjem kolačića ili zaštitom podataka,
+            možete nas kontaktirati putem{" "}
+            <Link
+              href="/kontakt"
+              className="text-foreground underline underline-offset-4"
+            >
+              kontakt forme
+            </Link>
+            .
+          </p>
+          <p className="mt-3">Hvala vam na poverenju i poseti našem portalu.</p>
+        </section>
+      </div>
     </div>
   );
 }
