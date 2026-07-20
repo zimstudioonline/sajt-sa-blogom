@@ -5,7 +5,7 @@ compatibility_date = "2026-07-18"
 # Nije tajna — dozvoljeni origin i ID audience-a.
 [vars]
 ALLOWED_ORIGIN = "https://zdravritual.com"
-RESEND_AUDIENCE_ID = ""   # popuni ID iz Resend → Audiences
+RESEND_AUDIENCE_ID = "6537c3aa-e932-49b5-9a74-db0985a0c676"
 
 # Tajne se NE stavljaju ovde. Postavi ih komandama:
 #   cd worker
