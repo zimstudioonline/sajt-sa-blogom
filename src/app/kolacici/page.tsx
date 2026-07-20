@@ -49,17 +49,29 @@ export default function Page() {
           </h2>
           <p className="mt-3">
             Zdrav Ritual je statički sajt bez korisničkih naloga i bez sistema za
-            komentare. Trenutno ne koristimo{" "}
-            <strong className="font-medium text-foreground">
-              nijedan kolačić za praćenje
-            </strong>{" "}
-            — ni analitičke, ni marketinške. Jedini podatak koji ostavljamo u vašem
-            pregledaču jeste zapis o vašem izboru u vezi sa kolačićima, kako vas ne
-            bismo pitali na svakoj stranici.
+            komentare. Koristimo:
           </p>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>
+              <strong className="font-medium text-foreground">
+                Zapis o vašem izboru kolačića
+              </strong>{" "}
+              — neophodan, čuva se lokalno u vašem pregledaču kako vas ne bismo pitali
+              na svakoj stranici. Ne šalje se nikome.
+            </li>
+            <li>
+              <strong className="font-medium text-foreground">Google Analytics 4</strong>{" "}
+              — analitika posećenosti.{" "}
+              <strong className="font-medium text-foreground">
+                Učitava se isključivo ako ste dali saglasnost
+              </strong>
+              . Ako odbijete, skripta se uopšte ne preuzima i nijedan njen kolačić se
+              ne postavlja.
+            </li>
+          </ul>
           <p className="mt-3">
-            Ovaj odeljak ažuriraćemo čim to prestane da važi, uz datum izmene naveden
-            na vrhu stranice.
+            Marketinške kolačiće trenutno ne koristimo. Ovaj odeljak ažuriraćemo čim to
+            prestane da važi, uz datum izmene naveden na vrhu stranice.
           </p>
         </section>
 
@@ -77,10 +89,12 @@ export default function Page() {
 
           <h3 className="mt-6 font-medium text-foreground">2. Analitički kolačići</h3>
           <p className="mt-2">
-            Ukoliko ih uvedemo, služili bi da razumemo kako posetioci koriste sajt —
-            broj poseta, najčitaniji članci, vreme provedeno na stranici, vrste uređaja
-            i način dolaska na sajt. Podaci se koriste isključivo za unapređenje
-            sadržaja. Postavljaju se samo uz vašu saglasnost.
+            Koristimo Google Analytics 4 kako bismo razumeli kako posetioci koriste
+            sajt — broj poseta, najčitaniji članci, vreme provedeno na stranici, vrste
+            uređaja i način dolaska na sajt (Google, društvene mreže i slično). Vaša IP
+            adresa se pritom anonimizuje, a podatke ne koristimo za personalizaciju
+            reklama. Postavljaju se samo uz vašu saglasnost i služe isključivo za
+            unapređenje sadržaja.
           </p>
 
           <h3 className="mt-6 font-medium text-foreground">3. Marketinški kolačići</h3>
@@ -95,11 +109,25 @@ export default function Page() {
         <section>
           <h2 className="text-xl font-semibold text-foreground">Kolačići trećih strana</h2>
           <p className="mt-3">
-            Trenutno na sajtu nema ugrađenih servisa trećih strana koji postavljaju
-            kolačiće. Ukoliko ih budemo uveli — na primer Google Analytics, Google Ads,
-            ugrađeni YouTube video ili Meta (Facebook) Pixel — biće aktivirani tek
-            nakon vaše saglasnosti, a ova stranica će biti dopunjena spiskom konkretnih
-            servisa. Svaki od tih servisa ima sopstvenu politiku privatnosti.
+            Jedini servis treće strane koji koristimo jeste{" "}
+            <strong className="font-medium text-foreground">Google Analytics</strong>{" "}
+            (Google Ireland Limited), i to samo uz vašu saglasnost. Uslove obrade
+            podataka možete pročitati u{" "}
+            <a
+              href="https://policies.google.com/privacy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground underline underline-offset-4"
+            >
+              Google politici privatnosti
+            </a>
+            .
+          </p>
+          <p className="mt-3">
+            Koristimo i Google Search Console, ali on radi preko običnog meta taga i ne
+            postavlja kolačiće. Ukoliko ubuduće uvedemo druge servise — na primer Google
+            Ads, ugrađeni YouTube video ili Meta (Facebook) Pixel — biće aktivirani tek
+            nakon vaše saglasnosti, a ova stranica će biti dopunjena.
           </p>
         </section>
 
@@ -126,10 +154,14 @@ export default function Page() {
           </h2>
           <p className="mt-3">
             Zapis o vašem izboru u vezi sa kolačićima ostaje u pregledaču dok ga sami
-            ne obrišete ili ne promenite izbor. Ukoliko ubuduće uvedemo analitičke ili
-            marketinške kolačiće, njihova trajanja biće navedena ovde — deo njih su
-            sesijski (brišu se po zatvaranju pregledača), a deo trajni (ostaju
-            određeni vremenski period).
+            ne obrišete ili ne promenite izbor.
+          </p>
+          <p className="mt-3">
+            Google Analytics, ukoliko ste na njega pristali, postavlja kolačić{" "}
+            <code className="text-foreground">_ga</code> sa trajanjem do 2 godine i{" "}
+            <code className="text-foreground">_ga_&lt;ID&gt;</code> istog trajanja, koji
+            služe za razlikovanje posetilaca i sesija. Možete ih obrisati u bilo kom
+            trenutku kroz podešavanja pregledača.
           </p>
         </section>
 

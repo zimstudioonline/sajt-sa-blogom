@@ -23,6 +23,10 @@ export const metadata: Metadata = {
   },
   description:
     "Proverene informacije, praktični saveti i inspirativni sadržaji o prirodnom zdravlju, ishrani, imunitetu i zdravim životnim navikama.",
+  // Google Search Console — običan meta tag, ne postavlja kolačiće.
+  verification: {
+    google: "mUYs8jTSphuhg7Iir5xXSh_BOGNmzUwlFobQE1zuivc",
+  },
 };
 
 export default function RootLayout({
