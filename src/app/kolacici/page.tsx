@@ -60,18 +60,20 @@ export default function Page() {
               na svakoj stranici. Ne šalje se nikome.
             </li>
             <li>
-              <strong className="font-medium text-foreground">Google Analytics 4</strong>{" "}
-              — analitika posećenosti.{" "}
               <strong className="font-medium text-foreground">
-                Učitava se isključivo ako ste dali saglasnost
+                Google Tag Manager
+              </strong>{" "}
+              — alat kroz koji učitavamo ostale servise: Google Analytics 4 (analitika)
+              i Meta Pixel (marketing).{" "}
+              <strong className="font-medium text-foreground">
+                Ništa od toga se ne preuzima dok ne date saglasnost
               </strong>
-              . Ako odbijete, skripta se uopšte ne preuzima i nijedan njen kolačić se
-              ne postavlja.
+              . Ako odbijete sve, kontejner se uopšte ne učitava.
             </li>
           </ul>
           <p className="mt-3">
-            Marketinške kolačiće trenutno ne koristimo. Ovaj odeljak ažuriraćemo čim to
-            prestane da važi, uz datum izmene naveden na vrhu stranice.
+            Vaš izbor prosleđujemo kroz Google Consent Mode, pa se analitika i
+            marketing pale odvojeno — možete prihvatiti jedno, a odbiti drugo.
           </p>
         </section>
 
@@ -99,35 +101,49 @@ export default function Page() {
 
           <h3 className="mt-6 font-medium text-foreground">3. Marketinški kolačići</h3>
           <p className="mt-2">
-            Ukoliko uvedemo oglašavanje, kolačići naših marketinških partnera mogli bi
-            da služe za prikaz relevantnih oglasa, merenje uspešnosti kampanja,
-            ograničavanje broja prikaza istog oglasa i remarketing. Postavljaju se samo
-            uz vašu saglasnost.
+            Koristimo Meta Pixel (Facebook), koji služi za merenje uspešnosti kampanja,
+            prikaz relevantnih oglasa, ograničavanje broja prikaza istog oglasa i
+            remarketing. Postavlja se isključivo uz vašu saglasnost — ako marketing
+            odbijete, ne učitava se.
           </p>
         </section>
 
         <section>
           <h2 className="text-xl font-semibold text-foreground">Kolačići trećih strana</h2>
-          <p className="mt-3">
-            Jedini servis treće strane koji koristimo jeste{" "}
-            <strong className="font-medium text-foreground">Google Analytics</strong>{" "}
-            (Google Ireland Limited), i to samo uz vašu saglasnost. Uslove obrade
-            podataka možete pročitati u{" "}
-            <a
-              href="https://policies.google.com/privacy"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-foreground underline underline-offset-4"
-            >
-              Google politici privatnosti
-            </a>
-            .
-          </p>
+          <p className="mt-3">Uz vašu saglasnost koristimo servise:</p>
+          <ul className="mt-3 list-disc space-y-2 pl-5">
+            <li>
+              <strong className="font-medium text-foreground">
+                Google Ireland Limited
+              </strong>{" "}
+              — Tag Manager i Analytics.{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground underline underline-offset-4"
+              >
+                Politika privatnosti
+              </a>
+            </li>
+            <li>
+              <strong className="font-medium text-foreground">
+                Meta Platforms Ireland Limited
+              </strong>{" "}
+              — Meta (Facebook) Pixel.{" "}
+              <a
+                href="https://www.facebook.com/privacy/policy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-foreground underline underline-offset-4"
+              >
+                Politika privatnosti
+              </a>
+            </li>
+          </ul>
           <p className="mt-3">
             Koristimo i Google Search Console, ali on radi preko običnog meta taga i ne
-            postavlja kolačiće. Ukoliko ubuduće uvedemo druge servise — na primer Google
-            Ads, ugrađeni YouTube video ili Meta (Facebook) Pixel — biće aktivirani tek
-            nakon vaše saglasnosti, a ova stranica će biti dopunjena.
+            postavlja kolačiće.
           </p>
         </section>
 
@@ -157,11 +173,17 @@ export default function Page() {
             ne obrišete ili ne promenite izbor.
           </p>
           <p className="mt-3">
-            Google Analytics, ukoliko ste na njega pristali, postavlja kolačić{" "}
-            <code className="text-foreground">_ga</code> sa trajanjem do 2 godine i{" "}
-            <code className="text-foreground">_ga_&lt;ID&gt;</code> istog trajanja, koji
-            služe za razlikovanje posetilaca i sesija. Možete ih obrisati u bilo kom
-            trenutku kroz podešavanja pregledača.
+            Uz saglasnost za analitiku, Google Analytics postavlja kolačiće{" "}
+            <code className="text-foreground">_ga</code> i{" "}
+            <code className="text-foreground">_ga_&lt;ID&gt;</code> sa trajanjem do 2
+            godine, koji služe za razlikovanje posetilaca i sesija.
+          </p>
+          <p className="mt-3">
+            Uz saglasnost za marketing, Meta Pixel postavlja kolačiće{" "}
+            <code className="text-foreground">_fbp</code> (do 3 meseca) i, ukoliko ste
+            na sajt došli sa Facebook oglasa,{" "}
+            <code className="text-foreground">_fbc</code>. Sve navedene kolačiće možete
+            obrisati u bilo kom trenutku kroz podešavanja pregledača.
           </p>
         </section>
 
