@@ -79,6 +79,20 @@ export default async function PostPage(props: PageProps<"/blog/[slug]">) {
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
+            // Spoljni linkovi iz Markdown-a otvaraju se u novom tabu; `sponsored`
+            // pokriva affiliate linkove ka partnerima (vidi /affiliate-disclosure).
+            a: ({ href, children }) => {
+              const spoljni = typeof href === "string" && /^https?:\/\//.test(href);
+              return (
+                <a
+                  href={href}
+                  target={spoljni ? "_blank" : undefined}
+                  rel={spoljni ? "noopener noreferrer sponsored" : undefined}
+                >
+                  {children}
+                </a>
+              );
+            },
             img: ({ src, alt }) =>
               typeof src === "string" ? (
                 // Slike iz Markdown-a — nepoznatih dimenzija, pa običan <img>.
