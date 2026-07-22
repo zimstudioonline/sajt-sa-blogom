@@ -31,7 +31,7 @@ export default function NaVrh() {
       onClick={naVrh}
       aria-label="Nazad na vrh strane"
       // z-40 je ispod cookie banera (z-50) — baner mora ostati iznad svega.
-      className={`fixed bottom-6 right-6 z-40 grid size-12 place-items-center rounded-full border border-border bg-surface text-foreground shadow-lg transition-all duration-300 hover:bg-accent hover:text-white hover:border-accent ${
+      className={`fixed bottom-6 right-6 z-40 grid size-12 place-items-center rounded-full border border-accent/25 bg-accent/10 text-accent shadow-lg backdrop-blur-sm transition-all duration-300 hover:border-accent hover:bg-accent hover:text-white ${
         vidljivo
           ? "translate-y-0 opacity-100"
           : "pointer-events-none translate-y-3 opacity-0"
