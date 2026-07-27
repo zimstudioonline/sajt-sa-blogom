@@ -14,6 +14,7 @@ const PARTNERI: { naziv: string; url?: string }[] = [
   { naziv: "Energy4Life", url: "https://energijazazivot.com/" },
   { naziv: "Vision", url: "https://visionproizvodi.in.rs/" },
   { naziv: "ZiM Digital", url: "https://zimdigital.rs/" },
+  { naziv: "Zdravi proizvodi", url: "https://www.zdraviproizvodi.com/" },
 ];
 
 export default function Page() {
