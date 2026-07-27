@@ -1,11 +1,6 @@
-<!-- BEGIN:nextjs-agent-rules -->
-# This is NOT the Next.js you know
+# O projektu
 
-This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing any code. Heed deprecation notices.
-<!-- END:nextjs-agent-rules -->
-# CLAUDE.md
-
-Ovaj fajl daje uputstva Claude Code-u (claude.ai/code) pri radu sa kodom u ovom repozitorijumu.
+Ovo je fajl o projektu gde ćemo kreirati sajt sa blogom
 
 @AGENTS.md
 
@@ -27,12 +22,22 @@ pre pisanja bilo kakvog Next.js koda** i obrati pažnju na obaveštenja o zastar
 ## Arhitektura
 
 - **App Router** unutar `src/app/` — ne postoji `pages/` direktorijum.
-  - `layout.tsx` je korenski (root) layout, `page.tsx` je početna stranica, `globals.css`
-    su globalni stilovi. Segmenti ruta se dodaju kao podfolderi sa sopstvenim `page.tsx`.
+  - **Dva root layout-a**, razdvojena route grupama (grupa ne ulazi u URL):
+    - `src/app/(sajt)/layout.tsx` — blog i sve redovne stranice. Header, Footer,
+      cookie baner, dugme „na vrh". Tema u `(sajt)/globals.css`.
+    - `src/app/(landing)/layout.tsx` — prodajni landing (`/alfa-aktiv/`). Bez
+      navigacije, sopstveni fontovi i tema u `(landing)/alfa-aktiv-theme.css`.
+  - Navigacija između te dve grupe je **pun page load**, ne client-side.
+  - `favicon.ico`, `icon.png`, `apple-icon.png` i `sitemap.ts` ostaju u korenu
+    `src/app/` — tako traže Next-ove metadata konvencije.
+  - Segmenti ruta se dodaju kao podfolderi sa sopstvenim `page.tsx`.
 - **Import alias**: `@/*` se mapira na `./src/*` (vidi `tsconfig.json`). Koristi ga umesto
   dugačkih relativnih putanja.
+- **Komponente**: `src/components/` su deljene (koriste ih obe grupe),
+  `src/app/(sajt)/components/` su samo za sajt, `src/components/alfa-aktiv/` samo
+  za landing.
 - **Tailwind CSS v4** preko `@tailwindcss/postcss` — konfigurisan u `postcss.config.mjs`
-  plus `@import`/`@theme` u `src/app/globals.css`. Ne postoji stari
+  plus `@import`/`@theme` u CSS fajlu svake grupe. Ne postoji stari
   `tailwind.config.js`.
 - **TypeScript** u `strict` režimu.
 
