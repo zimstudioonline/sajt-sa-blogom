@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/kolacici",
     "/disclaimer",
     "/affiliate-disclosure",
+    "/alfa-aktiv",
   ].map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: new Date(),

@@ -9,9 +9,12 @@ const RATIO = 77 / 835;
 export default function Logo({
   width = 110,
   className,
+  invertNaTamnoj = true,
 }: {
   width?: number;
   className?: string;
+  /** Landing stranice nemaju tamnu temu — tamo invertovanje daje beo logo na krem. */
+  invertNaTamnoj?: boolean;
 }) {
   return (
     <Image
@@ -20,7 +23,7 @@ export default function Logo({
       width={width}
       height={Math.round(width * RATIO)}
       priority
-      className={`dark:invert ${className ?? ""}`}
+      className={`${invertNaTamnoj ? "dark:invert" : ""} ${className ?? ""}`}
     />
   );
 }

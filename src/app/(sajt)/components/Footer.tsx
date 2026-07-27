@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { categories } from "@/lib/categories";
-import CookieSettingsLink from "./CookieSettingsLink";
+import CookieSettingsLink from "@/components/CookieSettingsLink";
 
 const navigacija = [
   { href: "/", label: "Početna" },

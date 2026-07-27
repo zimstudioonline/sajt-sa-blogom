@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/*
+  ALFA AKTIV — brend tema (Tailwind v4, CSS-first konfiguracija).
+  Paleta je izvedena iz proizvoda: duboka aronija-bordo, med-zlatna,
+  topla krem pozadina i suptilna zelena akcenta.
+
+  Ovaj fajl se učitava SAMO u (landing) root layout-u, pa se ne sudara sa
+  `globals.css` bloga (terakota tema + Geist fontovi).
+*/
+@theme {
+  /* Boje */
+  --color-cream: #fbf5ec;
+  --color-cream-deep: #f3e7d6;
+  --color-ink: #241a17;
+  --color-muted: #6f5f57;
+
+  --color-bordo: #6e1423;
+  --color-bordo-dark: #3f0a13;
+  --color-bordo-soft: #8f2436;
+
+  --color-honey: #d99a2b;
+  --color-honey-light: #f0c463;
+
+  --color-berry: #7d1e6a;
+  --color-leaf: #4b7a3f;
+
+  /* Tokeni koje očekuju deljene komponente (CookieConsent, CookieSettingsLink).
+     Preslikani na paletu landinga da baner ne izgleda kao strano telo.
+     Akcenat je bordo, a ne med, jer baner ima belo slovo na dugmetu. */
+  --color-background: var(--color-cream);
+  --color-foreground: var(--color-ink);
+  --color-surface: #ffffff;
+  --color-border: #e6d8c4;
+  --color-accent: var(--color-bordo);
+  --color-accent-hover: var(--color-bordo-soft);
+
+  /* Fontovi (mapirani na next/font CSS varijable iz layout.tsx) */
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+}
+
+:root {
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glatko skrolovanje za CTA sidra (#ponuda) */
+html {
+  scroll-behavior: smooth;
+}
