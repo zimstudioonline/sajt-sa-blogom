@@ -77,8 +77,6 @@ Ako naiđete na proizvod koji tvrdi da aronija leči ili sprečava bolesti, to n
 
 ## Kako se aronija koristi u ishrani
 
-![Plodovi aronije u drvenoj činiji i čaša soka od aronije na drvenom stolu](/images/posts/aronija-plodovi-i-sok.webp)
-
 **Svež plod** je najbogatiji vlaknima, ali je zbog trpkosti mnogima teško prihvatljiv sam za sebe. Dobro se uklapa u smutije sa bananom ili jabukom, koje ublažavaju trpkost.
 
 **Sok** je najčešći oblik. Prirodni sok od aronije je izrazito trpak, pa se obično razblažuje vodom ili meša sa slađim sokovima. Obratite pažnju na deklaraciju — mnogi „sokovi od aronije" sadrže mali procenat aronije i mnogo dodatog šećera.
