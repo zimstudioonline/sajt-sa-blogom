@@ -12,7 +12,9 @@ Aronija je poslednjih godina postala jedno od najpopularnijih bobičastih voća 
 
 Ovaj tekst se drži onoga što se zaista zna: šta aronija sadrži, kako se koristi u ishrani, šta znači ORAC vrednost koju ćete videti na deklaracijama i zašto se o zdravstvenim dejstvima biljaka govori opreznije nego o vitaminima i mineralima.
 
-## Šta je aronija
+## Šta je aronija?
+
+![Plodovi aronije u pletenoj korpi i na drvenoj podlozi, sa zelenim listovima](/images/posts/aronija-na-drvenoj-podlozi.webp)
 
 Aronija (*Aronia melanocarpa*), poznata i kao crna aronija, žbunasta je biljka iz porodice ruža, poreklom iz Severne Amerike. U Evropu je doneta početkom dvadesetog veka, prvo u Rusiju i istočnu Evropu, gde se pokazala izuzetno otpornom na hladnoću, bolesti i siromašnije zemljište.
 
