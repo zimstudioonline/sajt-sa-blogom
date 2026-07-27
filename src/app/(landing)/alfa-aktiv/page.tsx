@@ -7,6 +7,7 @@ import ProductIntro from "@/components/alfa-aktiv/sections/ProductIntro";
 import WhyDifferent from "@/components/alfa-aktiv/sections/WhyDifferent";
 import WhatsInside from "@/components/alfa-aktiv/sections/WhatsInside";
 import IngredientsDetail from "@/components/alfa-aktiv/sections/IngredientsDetail";
+import Deklaracija from "@/components/alfa-aktiv/sections/Deklaracija";
 import Recognition from "@/components/alfa-aktiv/sections/Recognition";
 import DayTimeline from "@/components/alfa-aktiv/sections/DayTimeline";
 import Comparison from "@/components/alfa-aktiv/sections/Comparison";
@@ -46,6 +47,7 @@ export default function AlfaAktivLanding() {
       <WhyDifferent />
       <WhatsInside />
       <IngredientsDetail />
+      <Deklaracija />
       <Recognition />
       <DayTimeline />
       <Comparison />
