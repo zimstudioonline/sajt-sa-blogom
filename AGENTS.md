@@ -1,8 +1,9 @@
 # O projektu
 
-Ovo je fajl o projektu gde ćemo kreirati sajt sa blogom
+Ovo je fajl o projektu gde ćemo kreirati sajt sa blogom.
 
-@AGENTS.md
+Ovo je jedini izvor istine o projektu — `CLAUDE.md` samo upućuje ovde, da se
+činjenice ne bi razilazile na dva mesta.
 
 ## Bitno: Next.js 16
 
@@ -10,7 +11,7 @@ Ovaj projekat koristi **Next.js 16.2.10**, koji ima prelomne (breaking) izmene u
 ranije verzije (API-ji, konvencije i struktura fajlova mogu se razlikovati od podataka na
 kojima je model treniran). **Pročitaj odgovarajući vodič u `node_modules/next/dist/docs/`
 pre pisanja bilo kakvog Next.js koda** i obrati pažnju na obaveštenja o zastarelosti
-(deprecation). Vidi `AGENTS.md` (uvezen iznad).
+(deprecation).
 
 ## Komande
 
@@ -41,8 +42,37 @@ pre pisanja bilo kakvog Next.js koda** i obrati pažnju na obaveštenja o zastar
   `tailwind.config.js`.
 - **TypeScript** u `strict` režimu.
 
-## Namera projekta
+## Sadržaj i podaci
 
-Ovo je **blog sajt** (u izradi). Sam blog — kako se postovi dobavljaju i prikazuju — još
-nije napravljen; ne pretpostavljaj da postoji pipeline za postove ili struktura sadržaja
-dok se ne doda.
+- **Postovi** su Markdown fajlovi u `content/posts/*.md` sa YAML frontmatter-om
+  (`title`, `date`, `category`, `excerpt`, `author`, `cover`, `draft`). Slug posta je
+  ime fajla. Čitanje ide preko `gray-matter` u `src/lib/posts.ts` — samo na serveru
+  i u build vremenu, jer koristi fajl-sistem.
+- **Kategorije** su kuriran spisak u `src/lib/categories.ts` i postoje nezavisno od
+  postova. Post ih u frontmatter-u referencira imenom, ne slug-om.
+- **Kalkulatori** su definisani u `src/lib/calculators.ts`, sa stranicama pod
+  `(sajt)/kalkulatori/`.
+- Slike postova stoje u `public/images/posts/`.
+
+## Objavljivanje
+
+- **Statički export** (`output: "export"`) na **GitHub Pages**, domen
+  **zdravritual.com**. Deploy ide sam pri svakom push-u na `main`
+  (`.github/workflows/deploy.yml`).
+- Nema servera: newsletter obrađuje **Cloudflare Worker** u `worker/`, koji
+  koristi Resend i Turnstile.
+- Javne env varijable se postavljaju kao **GitHub Actions Variables**
+  (`NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_NEWSLETTER_ENDPOINT`,
+  `NEXT_PUBLIC_TURNSTILE_SITE_KEY`), a tajne Worker-a preko `wrangler secret`.
+
+## Na šta paziti
+
+- **Kolačići su opt-in.** Ništa što nije neophodno ne sme da se učita pre pristanka
+  (vidi `src/lib/consent.ts` i Cookie politiku). Skripte trećih strana idu kroz GTM,
+  uslovljene pristankom — ne direktno u layout.
+- **Zdravstvene tvrdnje.** Sajt piše o dodacima ishrani. Smeju se koristiti samo
+  odobrene tvrdnje, i to vezane za nutrijente (npr. vitamin C, selen), nikako za
+  biljke same po sebi. Tvrdnje o lečenju ili sprečavanju bolesti nisu dozvoljene —
+  ni u tekstu, ni u slikama.
+- **Komercijalne stranice** moraju otkriti da su komercijalne, i to blizu poziva na
+  akciju, ne samo u futeru.
