@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 import NaVrh from "./components/NaVrh";
 import TagManager from "@/components/TagManager";
+import { SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -18,6 +19,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  // Bez ovoga Next relativne og:image putanje razrešava u http://localhost:3000,
+  // pa se pri deljenju članka na mrežama slika ne prikaže.
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Zdrav Ritual — vaš vodič ka zdravijem životu",
     template: "%s — Zdrav Ritual",
