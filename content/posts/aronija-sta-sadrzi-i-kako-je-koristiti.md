@@ -4,6 +4,7 @@ date: "2026-07-27"
 category: "Prirodno zdravlje"
 excerpt: "Aronija je jedno od najbogatijih izvora antocijana među bobičastim voćem. Šta tačno sadrži, kako se koristi, šta znači ORAC vrednost i zašto se o njenom dejstvu govori opreznije nego što biste očekivali."
 author: "Redakcija Zdrav Ritual"
+cover: "/images/posts/aronija-plodovi-i-sok.webp"
 draft: false
 ---
 
@@ -74,6 +75,8 @@ Ako naiđete na proizvod koji tvrdi da aronija leči ili sprečava bolesti, to n
 
 ## Kako se aronija koristi u ishrani
 
+![Plodovi aronije u drvenoj činiji i čaša soka od aronije na drvenom stolu](/images/posts/aronija-plodovi-i-sok.webp)
+
 **Svež plod** je najbogatiji vlaknima, ali je zbog trpkosti mnogima teško prihvatljiv sam za sebe. Dobro se uklapa u smutije sa bananom ili jabukom, koje ublažavaju trpkost.
 
 **Sok** je najčešći oblik. Prirodni sok od aronije je izrazito trpak, pa se obično razblažuje vodom ili meša sa slađim sokovima. Obratite pažnju na deklaraciju — mnogi „sokovi od aronije" sadrže mali procenat aronije i mnogo dodatog šećera.
@@ -104,9 +107,11 @@ Ako ste **trudni, dojite, uzimate terapiju ili imate hronično oboljenje**, posa
 
 Dodaci ishrani nisu zamena za raznovrsnu i uravnoteženu ishranu i zdrav način života, i nisu lekovi.
 
-## Zaključak
+## Čime je bogata aronija?
 
-Aronija je vredna namirnica sa izuzetno bogatim sastavom biljnih jedinjenja, pre svega antocijana i polifenola. To je činjenica koja se lako proverava.
+Aronija je bogata pre svega **antocijanima** — prirodnim bojama iz grupe polifenola, po kojima nadmašuje borovnicu, kupinu i ribizlu. Uz njih sadrži proantocijanidine, hlorogensku kiselinu, kvercetin, tanine i biljna vlakna. Vitamin C sadrži u umerenoj količini, pa po tom nutrijentu zaostaje za crnom ribizlom, citrusima i paprikom.
+
+To je činjenica o sastavu koja se lako proverava.
 
 Ono što se ne može tvrditi jeste da aronija sama po sebi leči ili sprečava bolesti — takve tvrdnje nisu odobrene i nisu potkrepljene na način koji propisi zahtevaju. Zdravstvene tvrdnje ostaju vezane za nutrijente sa dokazanim dejstvom, poput vitamina C i selena.
 
