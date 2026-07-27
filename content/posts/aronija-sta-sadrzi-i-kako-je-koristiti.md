@@ -24,6 +24,8 @@ Ono što svako ko je probao svežu aroniju odmah primeti jeste izražena **trpko
 
 ## Šta aronija sadrži
 
+![Čime je aronija bogata — antocijani, polifenoli i proantocijanidini, biljna vlakna, vitamin C u umerenoj količini i tanini](/images/posts/aronija-nutritivna-moc-prirode.webp)
+
 Aronija se izdvaja pre svega po sastavu biljnih jedinjenja, a ne po sadržaju vitamina.
 
 ### Antocijani
