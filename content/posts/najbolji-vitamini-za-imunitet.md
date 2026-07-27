@@ -287,6 +287,10 @@ Prednost dajte proizvođačima koji primenjuju standarde dobre proizvođačke pr
 
 Ne postoji univerzalni suplement koji odgovara svima. Godine, način ishrane, zdravstveno stanje i životne navike utiču na izbor odgovarajućeg proizvoda.
 
+### Primer preparata iz naše ponude
+
+Jedan primer preparata koji ispunjava navedene kriterijume je [ALFA AKTIV](/alfa-aktiv/) — koncentrat aronije i crne ribizle sa vitaminom C i selenom, upisan u bazu Ministarstva zdravlja Republike Srbije. Vitamin C i selen doprinose zaštiti ćelija od oksidativnog stresa, a vitamin C doprinosi i normalnoj funkciji imunskog sistema. Deklaracija sa punim sastavom i količinama po dozi dostupna je na stranici proizvoda.
+
 ## Životne navike koje imaju veći uticaj na imunitet od vitamina
 
 Vitamini mogu doprineti normalnom radu imunog sistema, ali nisu najvažniji faktor. Svakodnevne navike imaju daleko veći uticaj na dugoročno očuvanje zdravlja. Detaljnije o njima pisali smo u vodiču [Kako ojačati imunitet prirodnim putem](/blog/kako-ojacati-imunitet-prirodnim-putem).

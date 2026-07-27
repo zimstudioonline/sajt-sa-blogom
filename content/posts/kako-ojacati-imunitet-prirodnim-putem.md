@@ -56,6 +56,8 @@ Antioksidansi pomažu organizmu da se zaštiti od oksidativnog stresa koji može
 
 Redovna konzumacija hrane bogate antioksidansima može doprineti očuvanju zdravlja i boljoj funkciji imunog sistema.
 
+Među bobičastim voćem posebno se izdvajaju aronija i crna ribizla, koje su bogate antocijanima i polifenolima. Ako vam je jednostavnije da ih unosite u koncentrovanom obliku, iz naše ponude izdvajamo [ALFA AKTIV](/alfa-aktiv/) — koncentrat aronije i crne ribizle sa vitaminom C i selenom, nutrijentima koji doprinose zaštiti ćelija od oksidativnog stresa.
+
 ## Namirnice koje mogu oslabiti imunitet
 
 Preteran unos rafinisanog šećera, industrijski prerađene hrane i gaziranih napitaka može negativno uticati na zdravlje. Takve namirnice često sadrže mnogo kalorija, a malo korisnih hranljivih materija.
