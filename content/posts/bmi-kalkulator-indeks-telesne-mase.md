@@ -46,6 +46,8 @@ Zbog toga se BMI koristi kao početni skrining pokazatelj. Ako rezultat ukazuje 
 
 ## Kako se vrši izračunavanje BMI?
 
+![BMI kalkulator: formula za izračunavanje indeksa telesne mase, primeri računa za muškarca i ženu, kategorije BMI od pothranjenosti do gojaznosti i ograničenja BMI-ja](/images/posts/bmi-kalkulator-vodic-kroz-telesnu-masu.webp)
+
 Izračunavanje BMI zasniva se na jednostavnoj matematičkoj formuli. Telesna masa u kilogramima deli se kvadratom visine izražene u metrima.
 
 ### BMI formula
@@ -103,7 +105,7 @@ Jedan BMI rezultat ne treba tumačiti izolovano niti koristiti za donošenje zak
 
 ### BMI 30 i više
 
-BMI od 30 ili više kod odraslih spada u kategoriju gojaznosti. U ovoj situaciji BMI može biti koristan kao početni skrining pokazatelj, ali za procenu zdravstvenog rizika mogu biti potrebni dodatni podaci i stručna procena.
+BMI od 30 ili više kod odraslih spada u kategoriju gojaznosti. U stručnoj literaturi se ova kategorija često dalje deli na stepene — od 30 do 34,9 kao gojaznost prvog stepena, a 35 i više kao viši stepeni. U ovoj situaciji BMI može biti koristan kao početni skrining pokazatelj, ali za procenu zdravstvenog rizika mogu biti potrebni dodatni podaci i stručna procena.
 
 Posebno je važno razumeti da BMI nije dijagnostički test. Njegova vrednost je najveća kada se koristi kao deo šire procene zdravstvenog stanja.
 
@@ -142,6 +144,8 @@ Ako se BMI koristi za procenu deteta ili adolescenta, rezultat treba tumačiti o
 ## Šta uraditi nakon izračunavanja BMI?
 
 BMI kalkulator je koristan prvi korak za dobijanje osnovne informacije o odnosu telesne mase i visine. Nakon dobijanja rezultata važno je izbeći zaključak da jedan broj sam po sebi opisuje celokupno zdravstveno stanje.
+
+Ako vas zanima i koji raspon telesne mase odgovara vašoj visini, tu sliku dopunjuje [kalkulator idealne telesne težine](/kalkulatori/idealna-tezina/) — on umesto jedne vrednosti daje raspon, pa se dobro čita zajedno sa BMI rezultatom.
 
 Ako je rezultat značajno izvan uobičajenog raspona ili postoje pitanja u vezi sa telesnom masom i zdravljem, korisno je razgovarati sa lekarom ili drugim kvalifikovanim zdravstvenim stručnjakom. Posebno kod dece, adolescenata, trudnoće, osoba sa izraženom mišićnom masom ili postojećim zdravstvenim problemima BMI treba tumačiti sa dodatnim oprezom.
 
