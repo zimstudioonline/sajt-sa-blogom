@@ -94,7 +94,7 @@ Najveći problem nastaje kada osoba preceni svoju aktivnost i izabere viši nivo
 
 ### Kako se procenjuje TDEE?
 
-Pojednostavljeno, TDEE se dobija povezivanjem procenjenog BMR-a sa faktorom fizičke aktivnosti. Tako kalkulator dobija procenu ukupne energije koju organizam potroši tokom dana.
+Pojednostavljeno, TDEE se dobija povezivanjem procenjenog BMR-a sa faktorom fizičke aktivnosti. Tako kalkulator dobija procenu ukupne energije koju organizam potroši tokom dana. Taj račun ne morate raditi ručno — unesite svoje podatke i izaberite nivo aktivnosti u [kalkulatoru kalorija](/kalkulatori/kalorije/), pa ćete odmah dobiti i procenjeni BMR i TDEE.
 
 Pošto su i BMR i nivo aktivnosti procene, TDEE takođe nije egzaktna vrednost. Savremeni kalkulatori zato rezultate treba da predstavljaju kao procenu, a ne kao laboratorijski izmerenu vrednost.
 
@@ -132,7 +132,7 @@ Mnogo je važnije razumeti kako se procena uklapa u svakodnevne navike, kvalitet
 
 Ako kalkulator pokaže određenu vrednost, ona predstavlja približnu procenu na osnovu unetih podataka. Promena telesne mase, aktivnosti ili drugih faktora može promeniti rezultat.
 
-Zato povremeno ponovno izračunavanje može imati smisla kada se značajno promene osnovni podaci ili način života.
+Zato povremeno ponovno izračunavanje može imati smisla kada se značajno promene osnovni podaci ili način života — dovoljno je da se vratite na [kalkulator kalorija](/kalkulatori/kalorije/) i unesete nove vrednosti.
 
 ### Zašto se potrebe mogu menjati tokom vremena?
 
