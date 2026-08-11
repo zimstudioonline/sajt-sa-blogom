@@ -10,14 +10,16 @@ export default function PostCard({ post }: { post: PostMeta }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-shadow hover:shadow-lg">
       <Link href={`/blog/${post.slug}`} className="flex flex-1 flex-col">
+        {/* Kartice moraju biti iste visine, pa okvir ostaje 16/9; `object-contain`
+            znači da se slika uklapa cela, bez sečenja ivica. */}
         {post.cover ? (
-          <div className="relative aspect-[16/9] w-full overflow-hidden bg-border">
+          <div className="relative aspect-[16/9] w-full overflow-hidden bg-surface">
             <Image
               src={post.cover}
               alt={post.title}
               fill
               sizes="(max-width: 768px) 100vw, 33vw"
-              className="object-cover transition-transform duration-300 group-hover:scale-105"
+              className="object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </div>
         ) : (

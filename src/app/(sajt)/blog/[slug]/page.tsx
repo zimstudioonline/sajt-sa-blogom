@@ -62,14 +62,17 @@ export default async function PostPage(props: PageProps<"/blog/[slug]">) {
         )}
       </div>
 
+      {/* Naslovna slika: bez fiksnog odnosa stranica i bez `object-cover` — često je
+          infografika, pa se prikazuje cela, u svom prirodnom odnosu. */}
       {post.cover && (
-        <div className="relative mb-10 aspect-[16/9] w-full overflow-hidden rounded-2xl bg-border">
+        <div className="mb-10 w-full overflow-hidden rounded-2xl bg-border">
           <Image
             src={post.cover}
             alt={post.title}
-            fill
+            width={1734}
+            height={907}
             sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
+            className="h-auto w-full"
             priority
           />
         </div>
